@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   
   s.add_dependency 'rack', '~> 2.0'
-  s.add_dependency 'graphql', '~> 1.8.13'
-  s.add_dependency 'json', '~> 1.8.6'
+  s.add_dependency 'graphql', '~> 1.8'
+  s.add_dependency 'json', '~> 1.8'
 end
