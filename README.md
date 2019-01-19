@@ -3,7 +3,7 @@ This is a simple spec-compliant GraphQL rack application and middleware based on
 Install the gem:
 
 ```
-gem install graphql-server
+gem install graphql_server
 ```
 
 # Using the server
@@ -35,7 +35,7 @@ Start using `rackup`
 rackup app.ru
 ```
 
-## As a middleware in your application
+## As a middleware in your existing application
 
 ```ruby
 # app.ru
@@ -45,12 +45,6 @@ type_def = ...
 resolver = ...
 
 use GraphqlServer, type_def: type_def, resolver: resolver, path: '/graphql'
-```
-
-Start using `rackup`
-
-```
-rackup app.ru
 ```
 
 # Options
