@@ -57,7 +57,7 @@ You can get started fast by writing a type defintions and a resolver hash
 GraphqlServer.new(type_def: type_def, resolver: resolver)
 ```
 
-You can also provide your own schema
+You can also provide your own [schema](http://graphql-ruby.org/schema/definition.html)
 
 ```ruby
 GraphqlServer.new(schema: schema)
