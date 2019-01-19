@@ -1,0 +1,2 @@
+class Comment < OpenStruct  
+end
