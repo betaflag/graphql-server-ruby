@@ -8,4 +8,4 @@ require_relative 'types/post_type'
 require_relative 'types/query_type'
 require_relative 'schema'
 
-run GraphqlServer.new(schema: Schema)
+run GraphQLServer.new(schema: Schema)

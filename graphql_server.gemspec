@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'graphql_server'
-  s.version     = '0.0.1'
-  s.date        = '2019-01-18'
+  s.version     = '0.0.2'
+  s.date        = '2019-01-21'
   s.summary     = "A simple spec-compliant GraphQL rack application and middleware"
   s.description = "A simple spec-compliant GraphQL rack application and middleware"
   s.authors     = ["betaflag"]

@@ -14,7 +14,7 @@ class HelloWorldServer
       }
 
       Rack::Builder.new do
-        run GraphqlServer.new(type_def: type_def, resolver: resolver)
+        run GraphQLServer.new(type_def: type_def, resolver: resolver)
       end
     end
 
@@ -32,7 +32,7 @@ class HelloWorldServer
       }
 
       Rack::Builder.new do
-        use GraphqlServer, type_def: type_def, resolver: resolver, path: path
+        use GraphQLServer, type_def: type_def, resolver: resolver
         run [200]
       end
     end

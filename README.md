@@ -26,7 +26,7 @@ resolver = {
   }
 }
 
-run GraphqlServer.new(type_def: type_def, resolver: resolver)
+run GraphQLServer.new(type_def: type_def, resolver: resolver)
 ```
 
 Start using `rackup`
@@ -44,7 +44,7 @@ require 'graphql_server'
 type_def = ...
 resolver = ...
 
-use GraphqlServer, type_def: type_def, resolver: resolver, path: '/graphql'
+use GraphQLServer, type_def: type_def, resolver: resolver
 ```
 
 # Options
@@ -54,21 +54,21 @@ use GraphqlServer, type_def: type_def, resolver: resolver, path: '/graphql'
 You can get started fast by writing a type defintions and a resolver hash
 
 ```ruby
-GraphqlServer.new(type_def: type_def, resolver: resolver)
+GraphQLServer.new(type_def: type_def, resolver: resolver)
 ```
 
 You can also provide your own [schema](http://graphql-ruby.org/schema/definition.html)
 
 ```ruby
-GraphqlServer.new(schema: schema)
+GraphQLServer.new(schema: schema)
 ```
 
 See the examples folder for more details
 
-## Middleware
-
-When using as a middleware, you can specify the path to mount the graphql endpoint (defaults to `/`)
+## Rack app Middleware
 
 ```ruby
-use GraphqlServer, type_def: type_def, resolver: resolver, path: '/graphql'
+map '/graphql'
+  use GraphQLServer, type_def: type_def, resolver: resolver
+end
 ```

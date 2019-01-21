@@ -3,10 +3,9 @@ require "minitest/spec"
 
 require 'graphql_server'
 require 'rack/test'
-require 'graphql'
 require 'hello_world_server'
 
-describe GraphqlServer do
+describe GraphQLServer do
   include Rack::Test::Methods
 
   describe "app" do
