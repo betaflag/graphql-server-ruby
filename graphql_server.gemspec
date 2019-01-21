@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'graphql_server'
-  s.version     = '0.0.2'
+  s.version     = '0.1.0'
   s.date        = '2019-01-21'
   s.summary     = "A simple spec-compliant GraphQL rack application and middleware"
   s.description = "A simple spec-compliant GraphQL rack application and middleware"
