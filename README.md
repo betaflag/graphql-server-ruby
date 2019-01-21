@@ -69,6 +69,24 @@ See the examples folder for more details
 
 ```ruby
 map '/graphql'
-  use GraphQLServer, type_def: type_def, resolver: resolver
+  use GraphQLServer, schema: schema
 end
+```
+
+# GraphQL Playground
+
+You can use the excellent GraphQL Playground IDE from Prisma
+
+```
+gem install graphql_playground
+```
+
+Map it to the url of your choice and point it to your GraphQL server endpoit
+
+```
+map '/playground' do
+  use GraphQLPlayground, endpoint: '/'
+end
+
+run GraphQLServer.new(type_def: type_def, resolver: resolver)
 ```
