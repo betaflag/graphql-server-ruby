@@ -65,14 +65,6 @@ GraphQLServer.new(schema: schema)
 
 See the examples folder for more details
 
-## Rack app Middleware
-
-```ruby
-map '/graphql'
-  use GraphQLServer, schema: schema
-end
-```
-
 # GraphQL Playground
 
 You can use the excellent GraphQL Playground IDE from Prisma
