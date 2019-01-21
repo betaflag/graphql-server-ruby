@@ -83,7 +83,7 @@ gem install graphql_playground
 
 Map it to the url of your choice and point it to your GraphQL server endpoit
 
-```
+```ruby
 map '/playground' do
   use GraphQLPlayground, endpoint: '/'
 end
